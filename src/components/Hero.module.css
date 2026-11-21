@@ -1,0 +1,135 @@
+.heroSection {
+  padding: 8rem 0 4.5rem;
+  background: #ffffff;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    padding: 10rem 0 6rem;
+  }
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+@media (min-width: 860px) {
+  .heroGrid {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+}
+
+/* Left Column */
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.roleHeadline {
+  font-size: clamp(2.35rem, 5.2vw, 3.75rem);
+  font-weight: 850;
+  line-height: 1.1;
+  color: #111111;
+  letter-spacing: -0.035em;
+}
+
+/* Terminal Pill Box */
+.terminalBox {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.6rem;
+  background: #111111;
+  color: #ffffff;
+  padding: 0.85rem 1.35rem;
+  border-radius: 14px;
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.termPrompt {
+  color: #a3e635;
+  font-weight: 700;
+}
+
+.termText {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.termCursor {
+  color: #ffffff;
+  font-weight: 700;
+  animation: blinkCursor 1s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Social Row */
+.socialRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.socialIconBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b5563;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.socialIconBtn:hover {
+  color: #111111;
+  border-color: #111111;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Right Column: Illustration */
+.rightCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustrationWrap {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+}
+
+.ideaLightbulb {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  animation: pulseBulb 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulseBulb {
+  0% { transform: translateY(0px) scale(1); }
+  100% { transform: translateY(-4px) scale(1.08); }
+}
+
+.developerSvg {
+  width: 100%;
+  height: auto;
+  display: block;
+}

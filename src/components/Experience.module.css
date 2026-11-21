@@ -1,0 +1,214 @@
+.headerBlock {
+  margin-bottom: 3.5rem;
+  max-width: 720px;
+}
+
+.timelineList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .timelineItem {
+    gap: 2.5rem;
+  }
+}
+
+/* Timeline Gutter */
+.timelineGutter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 44px;
+}
+
+.timelineNode {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--bg-tint);
+  border: 2px solid var(--accent-blue-border);
+  color: var(--accent-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.8125rem;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.12);
+  z-index: 2;
+  transition: all 0.25s ease;
+}
+
+.timelineItem:hover .timelineNode {
+  background: var(--accent-blue);
+  color: #ffffff;
+  border-color: var(--accent-blue);
+  transform: scale(1.08);
+}
+
+.timelineLine {
+  width: 2px;
+  flex-grow: 1;
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.3) 0%, rgba(226, 232, 240, 0.6) 100%);
+  margin-top: 0.5rem;
+}
+
+/* Experience Card */
+.experienceCard {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  padding: 1.75rem;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.experienceCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(59, 130, 246, 0.35);
+  box-shadow: 0 16px 36px -10px rgba(37, 99, 235, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.roleGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.typeBadge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.725rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-blue);
+}
+
+.roleTitle {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+
+.companyRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.companyName {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.bulletSeparator {
+  color: var(--text-light);
+}
+
+.locationText {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.periodBadge {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #1e3a5f;
+  background: var(--bg-tint);
+  border: 1px solid var(--accent-blue-border);
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.summaryText {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-body);
+}
+
+/* Achievements */
+.achievementsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  background: var(--bg-tint);
+  border: 1px solid rgba(59, 130, 246, 0.14);
+  border-radius: 14px;
+  padding: 1.25rem 1.4rem;
+}
+
+.achievementsTitle {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--accent-blue);
+}
+
+.achievementsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  list-style: none;
+}
+
+.achievementItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.8875rem;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.arrowBullet {
+  color: var(--accent-blue);
+  font-size: 0.875rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+/* Tech Chips */
+.techChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.techChip {
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: #f8fafc;
+  border: 1px solid var(--border-light);
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+}

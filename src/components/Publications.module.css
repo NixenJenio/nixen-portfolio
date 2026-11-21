@@ -1,0 +1,198 @@
+.headerBlock {
+  margin-bottom: 3.5rem;
+  max-width: 720px;
+}
+
+.paperCard {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  border-radius: 24px;
+  padding: 2.25rem 1.85rem;
+  box-shadow: 0 12px 35px -8px rgba(37, 99, 235, 0.1), 0 1px 3px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .paperCard {
+    padding: 2.75rem 2.5rem;
+  }
+}
+
+.paperCard:hover {
+  border-color: rgba(37, 99, 235, 0.4);
+  box-shadow: 0 20px 48px -12px rgba(37, 99, 235, 0.16);
+  transform: translateY(-2px);
+}
+
+.paperCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb 0%, #60a5fa 50%, #93c5fd 100%);
+}
+
+/* Badge Row */
+.badgeRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primaryBadges {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.ieeePill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--accent-blue);
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+}
+
+.scopusPill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--bg-tint);
+  border: 1px solid var(--accent-blue-border);
+  color: #1e3a5f;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+.rolePill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: #f1f5f9;
+  color: var(--text-muted);
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+}
+
+.yearText {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+/* Title */
+.paperTitle {
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.venueText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.venueText strong {
+  color: var(--text-secondary);
+}
+
+.divider {
+  height: 1px;
+  background: var(--border-light);
+  width: 100%;
+}
+
+/* Sections */
+.subHeading {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+}
+
+.abstractBlock,
+.highlightsBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.abstractText {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-body);
+}
+
+.highlightsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.highlightItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.925rem;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.checkIcon {
+  color: var(--accent-blue);
+  font-weight: 800;
+  font-size: 0.85rem;
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+/* Tech Badges */
+.techRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.techTag {
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  background: var(--bg-tint);
+  border: 1px solid var(--accent-blue-border);
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+}
+
+/* Actions */
+.actionRow {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+}
+
+.officialNotice {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
